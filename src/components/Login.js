@@ -17,22 +17,22 @@ const Login = () => {
       <div className="auth-form-container">
         <h2>Welcome to Coral Mango Solutions</h2>
         <form className="login-form">
-          <label htmlFor="user">Username</label>
+          <label htmlFor="username">Username</label>
           <input
             type="text"
             name="user"
-            id="user"
+            id="username"
             ref={inputRef}
             value={val.user}
             placeholder="Enter your username"
             onChange={inputChange}
           />
 
-          <label htmlFor="pass">Password</label>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             name="pass"
-            id="pass"
+            id="password"
             value={val.pass}
             placeholder="*******"
             onChange={inputChange}
