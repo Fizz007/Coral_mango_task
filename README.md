@@ -12,7 +12,7 @@ Coral Mango ASSIGNMENT
 
 ## To Run the Project in Local
 
-1> Clone the Repository. command:- git clone https://github.com/GajrajRahul/coralMango-react-assignment.git
+1> Clone the Repository. command:- git clone https://github.com/Fizz007/Coral_mango_task.git
 
 2> Change directory. command:- cd coralMango-react-assignment
 
