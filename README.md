@@ -13,7 +13,9 @@ TechStack...
 Steps to run...
 
 ==> Login with username:"demo@coralmango.com" and password:"demo123".
+
 ==> User can search the user in search box and toggle the data in Table and Card view.
+
 ==> User can logout by clicking on logout button.
 
 ---
