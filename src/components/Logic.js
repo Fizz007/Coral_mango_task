@@ -18,7 +18,7 @@
 // const ans = output(a)
 // console.log(ans)
 
-// solution  3==> 
+// Solution  3==> 
 
 //   let  a = [1, 3, 5, 2, 4] 
 // function output(arr){
