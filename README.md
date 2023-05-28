@@ -1,24 +1,32 @@
-Title ...
+## Title ...
 
 Coral Mango ASSIGNMENT
 
 ---
 
-TechStack...
+## TechStack...
 
 "React, React-router-dom, React-Toastify"
 
 ---
 
-Steps to run...
+## To Run the Project in Local
 
-==> Login with username:"demo@coralmango.com" and password:"demo123".
+1> Clone the Repository. command:- git clone https://github.com/GajrajRahul/coralMango-react-assignment.git
 
-==> User can search the user in search box and toggle the data in Table and Card view by clicking on Table button.
+2> Change directory. command:- cd coralMango-react-assignment
 
-==> User can also filter the data by clicking on dropdown list.
+3> Install node modules. command- npm install
 
-==> User can logout by clicking on logout button.
+4> Install packages routes.
+
+commands:-
+
+a. Routes:- npm install react-router-dom.
+
+b. React Toastify:- npm install react-toastify.
+
+To run: npm start.
 
 ---
 
