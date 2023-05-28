@@ -30,6 +30,14 @@ To run: npm start.
 
 ---
 
+## For Login Credentials
+
+Enter the below username and password
+
+Username: demo@coralmango.com
+
+Password: demo123
+
 
 ES6 basics Solutions are in the logic file which is in src/components/logic.js 
 
