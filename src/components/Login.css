@@ -48,7 +48,7 @@ input:focus{
 }
 
 .login_btn:hover{
- background-color: rgba(255, 166, 0, 0.541);
+ background-color: #7439db;
  color: white;
 }
 

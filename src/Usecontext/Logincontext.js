@@ -11,7 +11,7 @@ const Logincontext = ({children}) => {
         pass: "",
       });
     
-      const username = "demo";
+      const username = "demo@coralmango.com";
       const password = "demo123";
       let navigate = useNavigate();
     
