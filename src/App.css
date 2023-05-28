@@ -1,38 +1,105 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: black;
+}
+
+.search {
+  width: 35%;
+ 
+  border: none;
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: lightslategrey;
+  font-size: 14px;
+}
+
+.searchbar {
+  padding: 2px 12px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 38px;
+  border-radius: 8px 0 0 8px;
+}
+
+.bttn {
+  padding: 7px 20px;
+  font-size: 20px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.select{
+  padding: 7px 15px;
+  font-size: 20px;
+  border-radius: 6px;
+  background-color: white;
+  color: #884dff;
+  font-weight: 600;
+}
+
+.table_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+ 
+  border: 1px solid #884dff;
+
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table tr th {
+  padding: 15px;
+  color: white;
+  background-color: #eb99ff;
+}
+table tr td {
+  padding: 15px;
+  background-color: #884dff;
+  color: white;
+}
+td,
+th {
+  padding: 5px;
+}
+.card_container {
+  width: 100vw;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card_wrapper {
+  height: 250px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  margin: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.card_details {
+  color: #884dff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_details > p {
+  margin-top: 5px;
 }
