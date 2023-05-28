@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Card from './Card';
 import { useNavigate } from 'react-router-dom';
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from 'react-toastify';
+import { userCont } from '../Usecontext/Logincontext';
 
 const Home = () => {
     const [apidata, setApidata] = useState([]);
@@ -11,6 +12,7 @@ const Home = () => {
     const [searchquery, setSearchquery] = useState("");
     const [toggle, setToggle] = useState(false);
     const navi = useNavigate();
+    const {setVal} = useContext(userCont)
   
     useEffect(() => {
       getdata();
@@ -71,6 +73,10 @@ const Home = () => {
     };
 
     function handleLogout(){
+      setVal({
+        user: "",
+        pass: "",
+      })
      navi('/')
     }
   

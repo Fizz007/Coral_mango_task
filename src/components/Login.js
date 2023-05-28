@@ -1,51 +1,28 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import "../components/Login.css";
-import { useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import { userCont } from "../Usecontext/Logincontext";
 
 const Login = () => {
-  const [val, setVal] = useState({
-    user: "",
-    pass: "",
-  });
+	const {val, handleLogin, inputChange} = useContext(userCont)
+  const inputRef = useRef(null)
 
-  const username = "demo@coralmango.com";
-  const password = "demo123";
-  let navigate = useNavigate();
+  useEffect(()=> {
+    inputRef.current.focus();
+    return <input ref={inputRef} />;
+  },[])
 
-  function inputChange(e) {
-    setVal({
-      ...val,
-      [e.target.name]: e.target.value,
-    });
-  }
-
-  function handleLogin(e) {
-    e.preventDefault();
-
-    if (!val.user || !val.pass) {
-      toast.error("Some fields are missing")
-    } else if (val.user !== username || val.pass !== password) {
-      toast.error("Invalid credentials");
-    } else {
-		navigate("/home");
-		toast.success("Login Sucessful",{
-			position: toast.POSITION.TOP_RIGHT,}
-		  )
-    }
-  }
-
-  return (
+   return (
     <div className="login_container">
       <div className="auth-form-container">
-        <h2>Welcome to Coral mango solutions</h2>
+        <h2>Welcome to Coral Mango Solutions</h2>
         <form className="login-form">
           <label htmlFor="user">Username</label>
           <input
             type="text"
             name="user"
             id="user"
+            ref={inputRef}
             value={val.user}
             placeholder="Enter your username"
             onChange={inputChange}
@@ -60,7 +37,7 @@ const Login = () => {
             placeholder="*******"
             onChange={inputChange}
           />
-          <button type="submit" onClick={handleLogin}>
+          <button className="login_btn" type="submit" onClick={handleLogin}>
             Log In
           </button>
         </form>

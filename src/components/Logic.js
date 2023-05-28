@@ -1,26 +1,30 @@
-//  const a = [1, 3, 5, 2, 4];
+// Solution  ==> 1
+//  let  a = [1, 3, 5, 2, 4] 
 
-// const result1 = a.filter((item) => {
-//     return item === 1 || item === 5 || item === 4;
-// });
+// function output(arr){
+//   return arr.filter((item,i)=> i%2 === 0)
 
-// console.log(result1);
+// }
+// const ans = output(a)
+// console.log(ans)
 
-// solution  2==> const a = [1, 3, 5, 2, 4];
+// Solution  ==> 2
+//  let  a = [1, 3, 5, 2, 4] 
 
-// const result2 = a.map((item) => {
-//   return item * item ;
-// });
+// function output(arr){
+//     return arr.map((item,i)=> item * item)
+//    
+// }
+// const ans = output(a)
+// console.log(ans)
 
-// console.log(result2);
+// solution  3==> 
 
-// solution  3==> const a = [1, 3, 5, 2, 4];
-
-// const result3 = a.filter((item) => {
-//     return item === 1 || item === 5 || item === 4;
-// }).map((item) => {
-//   return item * item;
-// });
-
-// console.log(result3);
+//   let  a = [1, 3, 5, 2, 4] 
+// function output(arr){
+//     return arr.filter((item,i)=>i%2 === 0).map((elem)=> elem * elem);
+   
+// }
+// const ans = output(a)
+// console.log(ans)
 
