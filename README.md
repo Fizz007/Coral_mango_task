@@ -14,7 +14,9 @@ Steps to run...
 
 ==> Login with username:"demo@coralmango.com" and password:"demo123".
 
-==> User can search the user in search box and toggle the data in Table and Card view.
+==> User can search the user in search box and toggle the data in Table and Card view by clicking on Table button.
+
+==> User can also filter the data by clicking on dropdown list.
 
 ==> User can logout by clicking on logout button.
 
