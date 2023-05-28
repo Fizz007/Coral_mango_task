@@ -38,6 +38,8 @@ Username: demo@coralmango.com
 
 Password: demo123
 
+---
+
 
 ES6 basics Solutions are in the logic file which is in src/components/logic.js 
 
